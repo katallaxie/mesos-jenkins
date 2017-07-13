@@ -1,0 +1,14 @@
+sudo: true
+dist: trusty
+
+jobs:
+  include:
+    - stage: build docker image
+      script:
+        - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+        - docker build -t mesos-jenkins .
+        - docker images
+        - docker tag mesos-jenkins $DOCKER_USERNAME/mesos-jenkins
+        - docker push $DOCKER_USERNAME/mesos-jenkins
+    - stage: test
+      script: docker run --rm $DOCKER_USERNAME/mesos-jenkins

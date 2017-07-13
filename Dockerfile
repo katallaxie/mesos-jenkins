@@ -32,9 +32,7 @@ RUN /usr/local/bin/install-plugins.sh   \
   ace-editor:1.1                 \
   ansicolor:0.5.0                \
   antisamy-markup-formatter:1.5  \
-  artifactory:2.12.0             \
   authentication-tokens:1.3      \
-  azure-slave-plugin:0.3.4       \
   branch-api:2.0.10              \
   build-name-setter:1.6.5        \
   build-timeout:1.18             \
@@ -42,7 +40,6 @@ RUN /usr/local/bin/install-plugins.sh   \
   conditional-buildstep:1.3.5    \
   config-file-provider:2.15.7      \
   copyartifact:1.38.1            \
-  cvs:2.13                       \
   docker-build-publish:1.3.2     \
   docker-workflow:1.12            \
   durable-task:1.14              \
@@ -57,7 +54,6 @@ RUN /usr/local/bin/install-plugins.sh   \
   github-api:1.85.1              \
   github-branch-source:2.0.8     \
   github-organization-folder:1.6 \
-  gitlab:1.4.6                   \
   gradle:1.27.1                  \
   greenballs:1.15                \
   handlebars:1.1.1               \
