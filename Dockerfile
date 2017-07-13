@@ -6,7 +6,6 @@ ARG BLUEOCEAN=1.1.4
 
 USER root
 
-
 RUN export TMP="$(mktemp -d)" && cd $TMP \
     && curl -fsSL "$LIBMESOS" -o libmesos-bundle.tar.gz  \
     && echo "$LIBMESOS_SHA libmesos-bundle.tar.gz" | sha256sum -c - \
@@ -94,7 +93,6 @@ RUN /usr/local/bin/install-plugins.sh   \
   scm-api:2.1.1                  \
   ssh-agent:1.15                 \
   ssh-slaves:1.20                \
-  subversion:2.9                 \
   timestamper:1.8.8              \
   translation:1.15               \
   variant:1.1                    \
